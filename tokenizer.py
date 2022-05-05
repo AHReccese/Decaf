@@ -14,18 +14,18 @@ grammar = """
     T_DOUBLELITERAL.2 : /(\d)+\.(\d)*((E|e)(\+|-)?(\d)+)?/
     
     KEYWORD.2 : /void\\b/ | /int\\b/ | /double\\b/ | /bool\\b/ | /string\\b/ 
-            | /class\\b/ | /null\\b/ | /this\\b/ 
-            | /for\\b/ | /while\\b/ | /if\\b/ | /else\\b/ | /return\\b/ 
+            | /class\\b/ | /interface\\b/ | /null\\b/ | /this\\b/ | /extends\\b/ 
+            | /implements\\b/ | /for\\b/ | /while\\b/ | /if\\b/ | /else\\b/ | /return\\b/ 
             | /break\\b/ | /continue\\b/ | /new\\b/ | /NewArray\\b/ | /Print\\b/ | /ReadInteger\\b/ 
             | /ReadLine\\b/ | /dtoi\\b/ | /itod\\b/ | /btoi\\b/ | /itob\\b/ | /private\\b/ 
-            | /public\\b/ | /__func__\\b/ | /__line__\\b/ | /import\\b/ 
+            | /protected\\b/ | /public\\b/ | /import\\b/ 
     
     T_INTLITERAL : /0(x|X)([a-f]|[A-F]|[0-9])+/ | /[0-9]+/
     
     T_BOOLEANLITERAL.2 : /true\\b/ | /false\\b/
     
     OPERATOR : "+" | "-" | "*" | "/" | "%"
-            | ">=" | "<=" | ">" | "<" | "==" | "=" | "!=" | "+=" | "-=" | "*=" | "/="
+            | "<" | "<=" | ">" | ">=" | "=" | "==" | "!=" 
             | "&&" | "||" | "!" 
     
     PUNCTUATION : ";" | "," | "." | "[" | "]" | "(" | ")" | "{" | "}"
@@ -36,7 +36,7 @@ grammar = """
     
     MULTILINE_COMMENT : /\/\*(\*(?!\/)|[^*])*\*\//
     
-    UNDEFINED_TOKEN.0 : /[.]+/
+    UNDEFINED_TOKEN.0 : /([.]|_)+/
     %import common.WS -> WHITESPACE
     %import common.ESCAPED_STRING -> T_STRINGLITERAL
     %ignore WHITESPACE

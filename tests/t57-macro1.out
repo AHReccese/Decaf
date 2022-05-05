@@ -9,7 +9,8 @@ T_ID i
 T_INTLITERAL 100
 ;
 T_ID i
-+=
++
+=
 T_INTLITERAL 1
 )
 Print
