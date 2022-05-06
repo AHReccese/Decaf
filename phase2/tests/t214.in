@@ -1,0 +1,6 @@
+import SeemsWrongButItsOK
+// define SeemsWrongButItsOK "filename.d" [commented]
+
+int main() {
+	print(SeemsWrongButItsOK, " Imported!"); // change Print to print
+}

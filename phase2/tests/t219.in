@@ -1,0 +1,5 @@
+void func() {
+    string functionName;
+    functionName = func__; // change __func__ to func__
+    print(functionName + "__func__"); // change Print to print
+}

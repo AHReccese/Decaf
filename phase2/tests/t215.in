@@ -1,0 +1,7 @@
+// define FILENAME "filename.d" [commented]
+import "filename.d" 
+// define PI 3.141592 [commented]
+
+int main() {
+	print(PI); // change Print to print
+}

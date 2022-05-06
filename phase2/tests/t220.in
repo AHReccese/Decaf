@@ -1,0 +1,3 @@
+void line__func__line() {
+    print("Strange function name:", func__, "line:", line__); // change Print to print, change __line__ to line__ , change __func__ to func__
+}

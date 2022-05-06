@@ -1,0 +1,6 @@
+// define folaan another_folaan [commented]
+
+int main() {
+	int folaan;
+	folaan = 5;
+}

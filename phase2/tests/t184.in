@@ -1,0 +1,20 @@
+void main(int argc, int argv) {
+    int a;
+    int b;
+    int c;
+
+    print("Please enter the first number: "); // change Print to print
+    a = ReadInteger();
+    print("Please enter the second number: "); // change Print to print
+    b = ReadInteger();
+
+    if (b == 0) {
+        print("NO NO NO NO... I can't divide by zero!"); // change Print to print
+        return;
+    }
+
+    c = a / b;
+
+    print("The result of ", a, " / ", b, " is ", c); // change Print to print
+    return;
+}

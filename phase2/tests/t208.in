@@ -1,0 +1,9 @@
+// define PI 3.141592 [commented]
+// define FOR_100_WITH_I for (i = 0; i < 100; i += 1) [commented]
+
+int main() {
+	print("Printing PI for 100 times..."); // change Print to print
+	for (i = 0; i < 100; i = i - 1) { // change A-=B to A = A - B
+		print(PI); // change Print to print
+	}
+}

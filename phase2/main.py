@@ -1,5 +1,8 @@
 import sys, getopt
-import tokenizer
+import parser, tokenizer
+import re
+
+
 def main(argv):
     inputfile = ''
     outputfile = ''
@@ -17,8 +20,8 @@ def main(argv):
         elif opt in ("-o", "--ofile"):
             outputfile = arg
 
-    with open("tests/" + inputfile, "r") as input_file:
-        output = tokenizer.tokenize(inputfile,input_file.readlines())
+    preprocessed_data = tokenizer.preprocess(inputfile)
+    output = parser.parse(preprocessed_data)
 
     with open("out/" + outputfile, "w") as output_file:
         output_file.write(output)

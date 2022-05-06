@@ -1,0 +1,20 @@
+// define funcName __func__ [commented]
+// define lineNumber __line__ [commented]
+// define funcStr "__func__" [commented]
+// define anDummyStr "__line" [commented]
+import "__func__.d"
+import "__line__.d"
+
+int func__line__main() {
+    print(funcName);
+    print(func__ == funcName); // change Print to print, change __func__ to func__
+    print(line__ == lineNumber); // change Print to print, change __line__ to line__
+    print(funcStr == "__func__");
+    print(anDummyStr != "__line__");
+}
+
+void anotherFunction() {
+    print(funcName); // change Print to print
+    print(funcName == func__); // change Print to print, change __func__ to func__
+    print(lineNumber == line__); // change Print to print, change __line__ to line__ 
+}

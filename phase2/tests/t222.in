@@ -1,0 +1,10 @@
+string emptyFuncName;
+int lineInGlobal;
+
+void line() {
+    emptyFuncName = func__; // change __func__ to func__
+    lineInGlobal = line__;
+    print(lineInGlobal + line__); // change Print to print, change __line__ to line__
+    print(func__ + emptyFuncName); // change Print to print, change __func__ to func__
+    print("I should have no errors!"); // change Print to print
+}

@@ -14,6 +14,12 @@ cd ../
 for filelist in ${dirlist[*]}
 do
     filename=`echo $filelist | cut -d'.' -f1`;
+    isFile=`echo $filename | cut -d '_' -f2 | cut -c 1-4`;
+    
+    if [ $isFile == "file" ]; then
+        continue
+    fi 
+
     output_filename="$filename.out"
     report_filename="$filename.report.txt"
     echo "Running Test $filename -------------------------------------"
@@ -41,7 +47,6 @@ do
         echo "Code did not execute successfuly!"
         ((NUMBER_OF_FAILED++))
     fi
-
 done
 
 echo "Passed : $NUMBER_OF_PASSED"

@@ -1,0 +1,6 @@
+void main () {
+    a = a + 10; // convert A+=B to A = A + B
+    a = a - 10; // convert A-=B to A = A - B
+    a = a * 10; // convert A*=B to A = A * B
+    a = a / 10; // convert A/=B to A = A / B
+}

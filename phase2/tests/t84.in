@@ -1,0 +1,4 @@
+void main () {
+    readLine(); // change Readline to readline
+    s = readLine();
+}

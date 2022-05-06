@@ -1,0 +1,3 @@
+void main () {
+    a = a + b = b - c = c * d = d / e; // convert A+-*/=B to A = A +-*/ B
+}

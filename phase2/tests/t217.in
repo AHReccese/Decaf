@@ -1,0 +1,5 @@
+int main() {
+    int a;
+    a = 2;
+    dummyVar=(a+line__)*line; // change __line__ to line__ 
+}
