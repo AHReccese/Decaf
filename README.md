@@ -56,5 +56,89 @@ wasn't any other updated test cases for phase1, we updated phase1's test cases i
    "t219","t220","t222","t226","t227","t228","t229","t230","t231"]
 ```
 
-
+but why are they wrong? here is the reason.
+```
+test1:
+Print  should be print!
+Readline should be readline
+--------------------------------------------
+test4:
+we don't have +=
+--------------------------------------------
+test6:
+Print should be print!
+--------------------------------------------
+test10:
+Print should be print!
+--------------------------------------------
+test67:
+we don't have /=
+--------------------------------------------
+test84:
+Readline should be readline
+--------------------------------------------
+test153:
+Print should be print!
+--------------------------------------------
+test154:
+Print should be print!
+--------------------------------------------
+test183:
+Print should be print!
+--------------------------------------------
+test184:
+Print should be print!
+--------------------------------------------
+test187:
+Print should be print!
+--------------------------------------------
+test195:
+Print should be print!
+--------------------------------------------
+test205:
+we don't have #define in this phase.
+--------------------------------------------
+test208:
+Print should be print
+--------------------------------------------
+test214:
+we don't have #define in this phase.
+--------------------------------------------
+test215:
+we don't have #define in this phase.
+--------------------------------------------
+test216:
+Print shoud be print
+--------------------------------------------
+test217:
+__line__ is not a keyword nor ID, it has been removed from phase 1.
+--------------------------------------------
+test219:
+Print should be print
+--------------------------------------------
+test220:
+Print should be print
+--------------------------------------------
+test222:
+Print should be print
+--------------------------------------------
+test226:
+we don't have #define in this phase.
+--------------------------------------------
+test227:
+we don't have +=,-=,*=,/= in this phase.
+--------------------------------------------
+test228
+we don't have +=,-=,*=,/= in this phase.
+--------------------------------------------
+test229
+Print should be print
+--------------------------------------------
+test230
+we don't have +=,-=,*=,/= in this phase.
+--------------------------------------------
+test231
+we don't have +=,-=,*=,/= in this phase.
+--------------------------------------------
+```
 
