@@ -96,16 +96,16 @@ test195:
 Print should be print!
 --------------------------------------------
 test205:
-we don't have #define in this phase.
+we don't have #define in the latest released docs.
 --------------------------------------------
 test208:
 Print should be print
 --------------------------------------------
 test214:
-we don't have #define in this phase.
+we don't have #define in the latest released docs.
 --------------------------------------------
 test215:
-we don't have #define in this phase.
+we don't have #define in the latest released docs.
 --------------------------------------------
 test216:
 Print shoud be print
@@ -123,22 +123,22 @@ test222:
 Print should be print
 --------------------------------------------
 test226:
-we don't have #define in this phase.
+we don't have #define in the latest released docs.
 --------------------------------------------
 test227:
-we don't have +=,-=,*=,/= in this phase.
+we don't have +=,-=,*=,/= in the latest released docs.
 --------------------------------------------
 test228
-we don't have +=,-=,*=,/= in this phase.
+we don't have +=,-=,*=,/= in the latest released docs.
 --------------------------------------------
 test229
 Print should be print
 --------------------------------------------
 test230
-we don't have +=,-=,*=,/= in this phase.
+we don't have +=,-=,*=,/= in the latest released docs.
 --------------------------------------------
 test231
-we don't have +=,-=,*=,/= in this phase.
+we don't have +=,-=,*=,/= in the latest released docs.
 --------------------------------------------
 ```
 
