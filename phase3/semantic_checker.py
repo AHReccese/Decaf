@@ -2,7 +2,6 @@ from lark.visitors import Interpreter
 from symbolTableCreator import function_name_to_arguments, global_functions
 from semantic_error import SemanticError
 
-
 class SemanticChecker(Interpreter):
     def assignment(self, tree):
         if  tree.children[0].meta_symbolObject.type != tree.children[1].meta_symbolObject.type:
@@ -37,7 +36,6 @@ class SemanticChecker(Interpreter):
     def returnstmt(self,tree):
         self.visit_children(tree)
         tree.meta_symbolObject = tree.children[0].meta_symbolObject
-
 
     def expr(self, tree):
         self.visit_children(tree)

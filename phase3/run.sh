@@ -1,6 +1,5 @@
 #!/bin/bash
-subtasks=( "G1" "G2" "G3" )
-scores=( 10 20 30 )
+subtasks=( "testcases" )
 mkdir -p out
 mkdir -p pre
 mkdir -p report
@@ -56,7 +55,6 @@ do
 				echo "++++ test passed"
 			else
 				((NUMBER_OF_FAILED++))
-				((NUMBER_OF_ALL_FAILURES++))
 				echo "---- test failed !"
 			echo
 			fi
@@ -64,7 +62,6 @@ do
 		else
 			echo "Code did not execute successfuly!"
 			((NUMBER_OF_FAILED++))
-			((NUMBER_OF_ALL_FAILURES++))
 		fi
 		
 	done
@@ -72,22 +69,5 @@ do
 	echo "Passed : $NUMBER_OF_PASSED"
 	echo "Failed : $NUMBER_OF_FAILED"
 	
-	echo "Subtask score: "
-	len=${#subtasks[@]}
-	for (( i=0; i<$len; i++ ))
-	do
-		if [[ "${subtasks[$i]}" == "$folder" ]]; then
-			subtask_score=$(( $NUMBER_OF_PASSED/($NUMBER_OF_PASSED + $NUMBER_OF_FAILED) * ${scores[$i]} ));
-			echo $subtask_score;
-			(( score += $subtask_score ));
-		fi
-	done
-	
-	echo "Subtask $folder done ------------------------------"
-	echo $'\n\n'
-	
 done
 
-echo "Final score: "
-echo "$score"
-exit $NUMBER_OF_ALL_FAILURES

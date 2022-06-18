@@ -46,7 +46,7 @@ grammar = """
     BOOL.2 : /true\\b/ | /false\\b/
     STRING : /"[^"\\n]*"/
     TYPE: "int" | "double" | "bool" | "string"
-    IDENT : /\\b(?!int|void|double|bool|string|class|interface|null|this|extends|implements|for|while|if|else|return|break|continue|new|NewArray|Print|ReadInteger|ReadLine|dtoi|itod|btoi|itob|private|protected|public)([a-zA-Z])((\d)|[_a-zA-Z])*\\b/
+    IDENT : /\\b(?!(?:int|void|double|bool|string|class|interface|null|this|extends|implements|for|while|if|else|return|break|continue|new|NewArray|Print|ReadInteger|ReadLine|dtoi|itod|btoi|itob|private|protected|public)\\b)([a-zA-Z])((\d)|[_a-zA-Z])*\\b/
     INLINE_COMMENT : "//" /[^\\n]*/ "\\n"
     MULTILINE_COMMENT : "/*" /.*?/ "*/"
     %import common.WS -> WHITESPACE

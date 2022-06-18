@@ -700,6 +700,7 @@ class cgenerator(Interpreter):
 def generate_code(decaf_code):
     parser = Lark(grammar, parser="lalr")
     parse_tree = parser.parse(decaf_code)
+    #print(parse_tree.pretty())
     try:
         SymbolTableCreator().visit(parse_tree)
         SemanticChecker().visit(parse_tree)

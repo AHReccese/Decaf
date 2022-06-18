@@ -405,8 +405,8 @@ class SymbolTableCreator(Interpreter):
 
 
 if __name__ == "__main__":
-    text = read_input_file("preTests/test1.in")
+    text = read_input_file("tests/testcases/t001-io1.d")
     parser = Lark(grammar, parser="lalr")
     parse_tree = parser.parse(text)
-    # print(parse_tree.pretty())
+    print(parse_tree.pretty())
     SymbolTableCreator().visit(parse_tree)
